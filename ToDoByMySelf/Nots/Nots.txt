@@ -1,0 +1,12 @@
+    -> Ctrl + Shift + P -----------------> Preferences: Open Settings (JSON) yaz ve seç
+    -> Shift + Alt + F ------------------> Codu formatlama
+    -> node "dosyaAdi.js"  --------------> js calistirma komutu
+    -> Ctrl + Alt + N -------------------> js terminalde calistirma komutu
+    -> shift + Alt  ---------------------> fare ile bir kac satrda imlec acabiliriz
+    -> ↓ / ↑ + Alt  ---------------------> belirtilen satir tamamen haraket ettirilebilir
+    -> click + Alt  ---------------------> ayni satirda bir kac yerde degisiklik yapilabilir
+    -> Ctrl + Alt + ↓ / ↑  --------------> imleç ekleme
+    -> Ctrl + F2  -----------------------> Tüm aynı ifadeleri aynı anda seçer ve düzenlemeye açar
+    -> Ctrl + L  ------------------------> Tüm satırı seçer
+
+   

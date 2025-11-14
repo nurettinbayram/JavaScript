@@ -1,0 +1,53 @@
+    ----------------------------> [] Array Methods <-----------------------------------------
+
+    -> names = ["Dani", "joe", "Sarah", "Molly", "joe"]
+    -> names2 = ["John", "Tom"]
+    -> names3 = ["Dalia", "Smith"]
+    -> nums = [1,2,3,[4,5,[7,9]],8]
+    -> n = [1,2,5,4,7]
+    
+    -> names.toString() -------------------> Dizi elemanlarini (,) ile ayirarak stringe cevirir. || Dani, joe...
+    -> names.join(" and ") ----------------> Dizi elemanlarini " and " ile birlestirir || Dani and joe...
+    -> names.concat(names2) ---------------> names i name2 ile birlestirir || [Dani,joe..., John, Tom]
+    -> names.concat(names2, names3) -------> names i name2 ile ikisinide names3 ile birlestirir || [Dani,..,John,..,Dalia,..]
+    -> names.splice(1, 1) -----------------> names in 1. index elemandan baslayarak bir eleman siler || joe silinir
+    -> names.splice(1, 2, 'Bill','bob') ---> names in 1. index elemandan baslayarak iki eleman siler yerine bill ve bob u atar
+    -> names.slice(1, 3) ------------------> names in 1.indexten 2.indexe kadar bir alt dizi olusturur 3 dahil degil || joe serah
+    -> names.slice(1) ---------------------> names in 1.indexten dizinin sonuna kadar olan elemanlar ile alt dizi  || joe ...   
+    -> names.indexOf("joe") ---------------> names in icinden joenun index sayisini bulur  || index = 1 
+    -> names.lastIndexOf("joe") -----------> names in sondan joe indexsini verir || index = 4 
+    -> nums.flat(2) -----------------------> nums arayinin icindeki nested araylei nurmal array duzeyine cikarir
+    -> names.forEach((name) => {....})-----> names uzerinde dolasip tum elemanlarini tek tek name atar. bir for dongu cesididir.
+    -> m=n.map((i) => {i*2}) --------------> n uzerinde dolasip tum elemanlarini tek tek i'ye atar ve 2 katini alir sonra yeni bir array dodurur
+    -> m=n.filter((i) => i > 4) -----------> n uzerinde dolasip tum elemanlarini tek tek i'ye atar ve i'nin 4 ten buyuk olan n'nin 4'ten buyuk elemanlarini yeni array icine dondurur
+    -> m=n.reduse((t, cur)=>t+cur)---------> n uzerinde dolasip dizinin ilk elemanini t ye atarak ikinci elemandan baslayarak tum elemenlari sirayla cur degerine atip toplar cur 
+    -> m=n.reduse((t, cur)=>t+cur)---------> n uzerinde dolasip dizinin ilk elemanini t ye atarak ikinci elemandan baslayarak tum elemenlari sirayla cur degerine atip toplar cur 
+    -> max = n.reduce((a, b) => 
+            Math.max(a, b), -Infinity) ----> a ilk degeri eksi sonsuzdur b nin ilk degeri dizinin ilk elemanidir buyuk olan deger return edilerek a ya atanir b dizinin bir sonraki elemanini alir
+    -> m = arr.find((s)=>...) -------------> ...
+    -> m = arr.findIndex((s)=>...) --------> ...
+    -> m = names.sort((a,b) => a-b)--------> numarik siralar siralar
+    -> m = names.sort((a,b) => b-a)--------> numarik siralar ters siralar
+    -> m = names.sort()--------------------> alfabetik siralar siralar
+    -> m = nums.reverse() -----------------> diziyi tersine cevir
+
+
+
+    ----------------------------> () Set Methods <-----------------------------------------
+    ~ Tekrar eden öğeleri otomatik olarak silen liste benzeri bir yapıdır.
+    ~ Sıralı ama indekslenmez.
+    ~ add(), delete(), has(), clear() metotları vardır
+
+
+    ----------------------------> () Map Methods <-----------------------------------------
+    ~ Anahtar-değer (key-value) çiftleriyle çalışan, sıralı bir listedir.
+    ~ Hem nesne hem liste özelliği taşır.
+    ~ Her anahtar herhangi bir veri türü olabilir
+    ~ 
+
+
+    ----------------------------> {} Object Methods <-----------------------------------------
+
+
+    
+    

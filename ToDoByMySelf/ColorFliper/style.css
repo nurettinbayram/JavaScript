@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    height: 40px;
+    width: 80px;
+}
+.mydiv {
+    height: 100vh;
+}
+.redBtn{
+    background-color: red;
+}
+.redBtn:hover{
+    background-color: rgb(252, 128, 128);
+}
+.greenBtn{
+    background-color: green;
+}
+.greenBtn:hover{
+    background-color: rgb(154, 246, 154);
+}
+.blueBtn{
+    background-color: blue;
+}
+.blueBtn:hover{
+    background-color: rgb(137, 137, 246);
+}
+.randomBtn{
+    background-color: gray;
+}
+.randomBtn:hover{
+    background-color: rgb(224, 206, 206);
+}

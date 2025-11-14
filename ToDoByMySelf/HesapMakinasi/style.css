@@ -1,0 +1,73 @@
+html{
+    font-size: 10;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+.oparator{
+    background-color: rgb(48, 140, 157);
+    color: aliceblue;
+}
+.oparator:hover{
+    background-color: rgb(53, 204, 230);
+    color: aliceblue;
+}
+
+.input{
+    width: 100%;
+    font-size: 40px;
+    text-align: right;
+    
+    background-color: rgb(185, 182, 182);
+}
+.keys{
+    width: 100%;
+}
+button{
+    font-size: 35px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.clear{
+    background-color: brown;
+}
+.equals{
+    background-color: rgb(81, 126, 96);
+}
+.equals:hover{
+    background-color: rgb(69, 106, 81);
+}
+.equals:active{
+    background-color: rgb(109, 152, 122);
+}
+.container{
+ width: 500px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+.keys{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.equals{
+    grid-area: 2/4/6/4;
+}
+.clear{
+    background-color: brown;
+}
+.clear:hover{
+    background-color: rgb(118, 44, 44);
+}
+.number:hover{
+    background-color: rgb(195, 197, 197);
+}
+.number:active{
+    background-color: rgb(219, 219, 219);
+}

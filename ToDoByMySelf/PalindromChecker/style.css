@@ -1,0 +1,11 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+.myColor1{
+    background-color: rgb(82, 197, 153);
+}
+.myColor2{
+    background-color: rgb(134, 129, 198);
+}

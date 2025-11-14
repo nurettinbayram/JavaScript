@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Pratik Alanı</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .myShadow {
+        box-shadow: -2px 2px 7px #000;
+      }
+      .btnColor {
+        color: #e4ac63;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row my-3">
+        <div class="col-lg-7">
+          <div class="card myShadow rounded-5">
+            <img
+              class="img-fluid rounded-5"
+              id="img"
+              src="./img/bmw.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="col-lg-5 border border-black rounded-4 shadow-lg mt-lg-0 mt-4 d-flex flex-column"
+        >
+          <div
+            id="info"
+            class="border m-4 p-3 rounded-2 shadow-lg overflow-auto mb-auto"
+            style="background-color: bisque; height: 420px"
+          >
+            <p><span class="fw-bold">Brand : </span><span id="brand"></span></p>
+            <p>
+              <span class="fw-bold">Millige :</span>
+              <span id="mil"></span>
+            </p>
+            <p>
+              <span class="fw-bold">Plate NO :</span>
+              <span id="plateNo"></span>
+            </p>
+            <p>
+              <span class="fw-bold">Info : </span>
+              <span id="discription"></span>
+            </p>
+          </div>
+          <div class="d-flex justify-content-center my-4">
+            <a id="left" class="mx-4" href="#">
+              <i class="bi bi-arrow-left-circle-fill fs-1 btnColor"></i>
+            </a>
+            <a id="right" class="mx-4" href="#">
+              <i class="bi bi-arrow-right-circle-fill fs-1 btnColor"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

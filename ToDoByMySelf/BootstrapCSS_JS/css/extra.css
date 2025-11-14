@@ -1,0 +1,33 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.yukseklik{
+    height: 550px;
+}
+.box{
+    width: 8rem;
+    height: 8rem;
+    background-color: aquamarine;
+}
+.box2{
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+}
+.box3{
+    right: 3%;
+    bottom: 3%;
+}
+.box4{
+    position: relative;
+    left: 35%;
+    top: 40%;
+}
+.box5{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.box6{
+    position: absolute;
+    right: 20px ;
+    top: 20px;
+}

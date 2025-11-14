@@ -1,0 +1,54 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: rgb(242, 239, 239);
+}
+.myColor1{
+    background-color: rgb(82, 197, 153);
+}
+.myColor2{
+    background-color: rgb(134, 129, 198);
+}
+.my-card{
+    width: 50%;
+    height: 165px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.task-list-card{
+    width: 50%;
+    height: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInSlide 0.5s ease-in-out;
+}
+
+
+.my-div:hover{
+    background-color: antiquewhite;
+}
