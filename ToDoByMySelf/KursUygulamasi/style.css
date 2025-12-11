@@ -10,6 +10,7 @@ main{
 .header{
     background-color: #FF6D1F;
     padding: 20px;
+    position: relative;
 }
 
 .haeaderTitle{
@@ -18,6 +19,32 @@ main{
     justify-content: center;
     
  }
+
+ .msg{
+   position: absolute;
+   right: 20px;
+   bottom: 10px;
+   
+   padding: 5px;
+   border-radius: 7px;
+   box-shadow: 3px 3px 5px rgb(0, 0, 0);
+   opacity:0 ;
+ }
+
+ .msg-success{
+   background-color: rgb(173, 220, 173);
+   opacity: 100%;
+ }
+
+ .msg-fail{
+   background-color: rgb(242, 6, 6);
+   opacity: 100%;
+ }
+
+.msg-warning{
+   background-color: bisque;
+   opacity: 100%;
+}
 
  main{
     display: flex;
@@ -73,7 +100,7 @@ main{
     padding: 8px;
  }
 
- #delete{
+ .delete{
     background-color:#c04503 ;
     border: none;
     border-radius: 6px;
