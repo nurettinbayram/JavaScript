@@ -46,3 +46,26 @@ img{
     width: 90%;
     border-radius: 50%;
 }
+
+#bar, #prgress-bar{
+    width: 95%;
+    margin: 0 10px;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-val{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-val i{
+    font-size: 1.3rem;
+    margin-right: 3px;
+}
