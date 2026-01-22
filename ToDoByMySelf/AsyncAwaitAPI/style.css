@@ -1,0 +1,17 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(242, 239, 239);
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+}
+
+.img{
+    width: 100px;
+}
