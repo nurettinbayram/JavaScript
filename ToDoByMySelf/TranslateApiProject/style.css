@@ -1,0 +1,87 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: rgb(150, 116, 4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #fff;
+    min-height: 350px;
+    min-width: 650px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+.out-border{
+    height: 280px;
+    border: gray solid 3px;
+    border-radius: 5px;
+}
+
+button{
+    width: 100%;
+    margin-top: 5px;
+    height: 35px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+    background-color: rgb(139, 136, 136);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+span, select{
+    margin: 0 3px;
+}
+
+.inputs{
+    display: flex;
+    height: 88%;
+}
+
+.inputs textarea{
+    width: 100%;
+    border: none;
+    resize: none;
+    padding: 5px;
+    
+}
+
+#fromText{
+    border-right: 1px solid gray;
+}
+
+.exchange i{
+    border: 1px solid gray;
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+
+.exchange i:hover{
+    color: #fff;
+    background-color: gray;
+}
+
+i:hover{
+    scale: calc(1.1);
+}

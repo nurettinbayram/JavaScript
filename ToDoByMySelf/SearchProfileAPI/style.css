@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgb(238, 125, 50);
+  padding-left: 20px;
+}
+
+.font {
+  font-family: "Playwrite IN Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.searchBoxContainer,
+.resultBoxContainer {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:
+    2px 2px 9px rgba(0, 0, 0, 0.6),
+    2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.searchBoxContainer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 2fr;
+}
+
+.searchBoxContainer p {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  opacity: 0.7;
+}
+.searchBoxContainer input {
+  height: 30px;
+  width: 80%;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px gray solid;
+}
+
+.searchBoxContainer input:focus {
+  border: none;
+  box-shadow:
+    2px 2px 9px rgb(238, 125, 50, 0.8),
+    2px 2px 6px rgb(238, 125, 50, 0.6);
+}
+
+.profile {
+  padding: 13px;
+  box-shadow:
+    3px 4px 10px rgba(0, 0, 0, 0.1),
+    3px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.profile li {
+  margin-top: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1px;
+}
+
+.profile span {
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.tasks {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.resultBoxContainer h3 {
+  margin-top: 20px;
+}
+
+.resultBoxContainer ul,
+ul {
+  list-style: none;
+  margin-top: 7px;
+  font-size: 18px;
+}
+
+li {
+  list-style: none;
+}
+
+.resultBoxContainer li {
+  margin-top: 3px;
+}
+.resultBoxContainer .unCompleted i,
+.alert {
+  color: red;
+}
+
+.resultBoxContainer .completed i {
+  color: green;
+}
+
+.no-visibil {
+  opacity: 0;
+}
+
+.visibil {
+  opacity: 100%;
+}
