@@ -1,0 +1,34 @@
+----------------------------> String <-----------------------------------------
+led name = "nurettin";
+let lastname = "bayram"
+let age = 29
+-> Arti oparatorleri ile birlestirme mumkum
+-> let info ="my name is" +  name + lastname+ " and i\'m"  + (29) + " years old"
+-> backtick ile daha kolay yapilir.
+-> let info = `my name is ${name} ${lastname} and i am ${age} years old`;
+
+----------------------------> String Methods <-----------------------------------------
+-> let str = "Komple Uygulamali Web Gelistirme Egitmi";
+-> re = str.toLowerCase()
+-> re = str.toUpperCase()
+-> re = str.length -----------------------------------> bu bir property
+-> re = str.slice(0, 6) ------------------------------> 0. indexten 6. indexe kadar al 6 dahil degil.
+-> re = str.slice(6) ---------------------------------> 6. indexten sonuna kadar al.
+-> re = str.slice(-10) -------------------------------> -10. indexten sonuna kadar al.
+-> re = str.substring(0,6) ---------------------------> slice isleminin aynisini uygular negatif index desteklemez
+-> re = str.replace("Egitimi", "Kursu") --------------> Egitimi yerine kursu yazilir
+-> re = str.trim() -----------------------------------> Bastan sondan bosluklari siler
+-> re = str.trimEnd() --------------------------------> sondan bosluklari siler
+-> re = str.trimStart() ------------------------------> Bastan  bosluklari siler
+-> re = str.indexOf("Web") ---------------------------> kelimenin basladigi indexi getirir
+-> re = str.lastIndexOf("Web") -----------------------> son buldegu kelimenin indexini dondurur
+-> re = str.split(" ") -------------------------------> Cumleyi bosluklardan ayirip diziye cevirir
+-> re = str.split(" ")[4] ----------------------------> Cumleyi bosluklardan ayirip dizinin 4 indexteki elemani getirir
+-> re = str.includes("Web") --------------------------> Web iceriyor mu? 
+-> re = str.startWith("komple")-----------------------> komple ile basliyor mu
+-> re = str.endWith("Egitimi") -----------------------> komple ile bitiyor  mu?
+-> re = str.repeat(3) --------------------------------> ifadeyi uc kere tekrarlar
+-> re = str.charAt(3) --------------------------------> 3. indexteki karakteri verir
+-> re = str.charCodeAt(3) ----------------------------> 3. indexteki Unicodeunu verir
+-> re = str.concate(" ", "Guzel Kurs") ---------------> str stringini bosluk birakilarak Guzel kurs ile birlestirir
+-> re = str.split("").reverse().join("") -------------> str diziye cevir tersine dondur bosluk yada herhangi bir sey birakmadan birlestir.

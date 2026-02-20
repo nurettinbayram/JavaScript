@@ -1,0 +1,109 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: rgb(242, 239, 239);
+}
+
+.header{
+    background-color: #FF6D1F;
+    padding: 20px;
+    position: relative;
+}
+
+.haeaderTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+ .msg{
+   position: absolute;
+   right: 20px;
+   bottom: 10px;
+   
+   padding: 5px;
+   border-radius: 7px;
+   box-shadow: 3px 3px 5px rgb(0, 0, 0);
+   opacity:0 ;
+ }
+
+ .msg-success{
+   background-color: rgb(173, 220, 173);
+   opacity: 100%;
+ }
+
+ .msg-fail{
+   background-color: rgb(242, 6, 6);
+   opacity: 100%;
+ }
+
+.msg-warning{
+   background-color: bisque;
+   opacity: 100%;
+}
+
+ main{
+    display: flex;
+ }
+
+ /*input container*/
+ .inputs-container{
+    margin-top: 50px;
+    width: 500px;
+    background-color: #F5E7C6;
+    margin-right: 5px;
+ }
+
+ .input-part{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 60px;
+ }
+
+ .input-txt{
+    width: 250px;
+ }
+
+ .btn-save{
+    background-color:#FF6D1F ;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px;
+ }
+
+
+
+
+
+ /*list container*/
+ .list-container{
+    margin-top: 50px;
+    flex: 1; /*sayfada kalan tum alani kapla*/
+    background-color: #F5E7C6;
+ }
+
+ table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-top: 20px;
+ }
+
+ th, td{
+    border: 1px solid #FF6D1F;
+    padding: 8px;
+ }
+
+ .delete{
+    background-color:#c04503 ;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px;
+ }

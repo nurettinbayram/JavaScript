@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="../BootstrapCSS_JS/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="../BootstrapCSS_JS/css/w3.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div class="container vh-100 d-flex flex-column justify-content-center">
+        <h1 class="text-center fw-bold pt-3">Timer</h1>
+        <h2 class="text-center mt-4" id="time">
+          <span id="min">00</span>:<span id="sec">00</span>
+        </h2>
+        <div class="text-center m-4">
+          <button type="button" onclick="start()" class="btn btn-info p-3 m-3">
+            Start
+          </button>
+          <button
+            type="button"
+            onclick="stop()"
+            class="btn btn-warning p-3 m-3"
+          >
+            Stop
+          </button>
+          <button
+            type="button"
+            onclick="reset()"
+            class="btn btn-danger p-3 m-3"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../BootstrapCSS_JS/js/bootstrap.bundle.min.js"></script>
+    <script src="./App.js"></script>
+  </body>
+</html>

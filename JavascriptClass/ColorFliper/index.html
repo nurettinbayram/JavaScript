@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="../BootstrapCSS_JS/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center mydiv"
+    >
+      <div>
+        <button onclick="setColor('red')" class="btn p-1 redBtn m-4">
+          RED
+        </button>
+        <button onclick="setColor('green')" class="btn p-1 greenBtn m-4">
+          GREEN
+        </button>
+        <button onclick="setColor('blue')" class="btn p-1 blueBtn m-4">
+          BLUE
+        </button>
+        <button onclick="randomFunc()" class="btn p-1 randomBtn m-4">
+          RANDOM
+        </button>
+      </div>
+      <div>
+        <p class="rgb fw-bold fs-4"></p>
+      </div>
+    </div>
+
+    <script src="../BootstrapCSS_JS/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

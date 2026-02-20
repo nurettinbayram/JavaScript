@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <!-- <link rel="stylesheet" href="../BootstrapCSS_JS/css/bootstrap.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="../BootstrapCSS_JS/css/w3.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <button onclick="getStart()" class="btn btn-info getStartBtn">
+        Get Start
+      </button>
+      <div id="card" class="card">
+        <div class="card-header">
+          <h3>QUIZ APP</h3>
+          <div class="timer">
+            <p class="time-text">Kalan Sure :</p>
+            <p class="time-second">10</p>
+            <div class="timeLine"></div>
+          </div>
+        </div>
+        <div class="question-part">
+          <p class="question"></p>
+
+          <div class="options" id="options"></div>
+          <div class="next">
+            <div class="progres">1 / 4</div>
+            <div>
+              <button
+                id="nextBtn"
+                class="next-btn disabled"
+                onclick="nextQuestion()"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardEnd disabled" id="cardEnd">
+        <div id="dogruCevapSayisi">
+          <span>Dodru Cevap Sayisi : </span>
+          <span></span>
+        </div>
+        <div id="toplamSoruSatisi">
+          <span>Toplam Soru Sayisi : </span>
+          <span></span>
+        </div>
+        <div>
+          <button onclick="testiBitir()" class="quit" id="testiBitir">
+            Testi Bitir
+          </button>
+          <button onclick="testiYenile()" class="replay" id="testiYenile">
+            Testi Yenile
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../BootstrapCSS_JS/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./Sorular.js"></script>
+    <script src="./Quiz.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
