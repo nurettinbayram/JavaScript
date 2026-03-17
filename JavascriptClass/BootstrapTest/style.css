@@ -1,0 +1,48 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 5px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.item{
+  margin: 0 5px;
+  height: 90%;
+  flex: 0.3;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  transition: flex 2s ease-in;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+.content{
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    z-index: 1;
+    color: white;
+    opacity: 0;
+}
+
+.item.active{
+  flex: 5;
+}
+
+.item.active .content{
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in 2s;
+}
+
+
+
+
+
