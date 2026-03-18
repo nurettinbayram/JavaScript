@@ -10,5 +10,6 @@ export default class Movie {
       `${baseURL}/movie/${this.id}?api_key=${api_key}&page=1&query=${this.keyword}`,
     );
     this.data = await response.json();
+    // console.log(this.data);
   }
 }

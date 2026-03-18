@@ -1,16 +1,19 @@
 import Search from "./models/Search";
 import { elements } from "./base";
-import * as seachView from "./views/searchView";
+import * as seachView from "./views/searchView"; //? Burada herseyi seachView adi ile dahil eder
 import Movie from "./models/Movie";
-import { movieDetails } from "./views/movieDetails";
+import { movieDetails, moveToTop } from "./views/movieDetails";
 
+//state adinda bir bir obje olusturulur ve bizim degiskenler bunun icine tanimlanir bunun sebebi farkli ayni
+// isimde iki veri olsada farkli objelere bagli olduklari icin farkli deger gosterir buda kafa karisikligini onler.
 const state = {};
 
-// Search Controler
+//!------------------------- Search Controler -----------------------------
 const searchControler = async () => {
   const keyword = elements.searchInput.value;
 
   if (keyword) {
+    // olusturulan bir search nesnesini state objesinin bir propertysi haline getirdik.
     state.search = new Search(keyword);
     //Bu method asenkron oldugu icin await key wordunu kullanmaliyiz
     await state.search.getResult();
@@ -25,36 +28,25 @@ const searchControler = async () => {
 };
 
 // Burada form submit edildigine dikkat et burada button submit ozelligi yok
+// base.js dosyasi altinda elements adinda bir obje tanimlanarak tum elementler burada tanimlanir
+//!-----------------Form Submited----------------------------
 elements.searchForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  console.log("-----------------Form Submited----------------------------");
   searchControler();
 });
 
-// Movie Controler
-const movie = new Movie(252291);
-movie.getMovie();
+//!--------------------- Movie Controler ---------------------------
+
 const movieControler = async () => {
+  //Note: Bu kisim onemli hashtag verisini nasil ele alacagimizi bize gosterir.
   const id = window.location.hash.replace("#", "");
   if (id) {
-    console.log(id);
     state.movie = new Movie(id);
-    elements.movieDetails.style.display = "flex";
-    movieDetails(await state.movie.getMovie());
+    await state.movie.getMovie();
+    movieDetails(state.movie.data);
+    moveToTop();
   }
 };
 
+//Note: hashchange eventi ile bilgiler guncellenir.
 window.addEventListener("hashchange", movieControler);
-
-//---------------Desabled Card---------------------
-
-const card = document.getElementById("movie-details");
-
-document.addEventListener("click", function (event) {
-  if (!card.contains(event.target)) {
-    card.style.display = "none";
-    console.log("it does not contain");
-  } else {
-    console.log("it contains");
-  }
-});

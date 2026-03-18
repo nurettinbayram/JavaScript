@@ -1,18 +1,34 @@
+import { elements } from "../base";
+
+//important: Scroll hateketini yaptirma.
+export function moveToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 export function movieDetails(movie) {
+  elements.movieDetails.innerHTML = "";
   const html = `
-    
-      <div class="movie-details" id="movie-details">
-        <div class="imgBox">
-          <img src="https://placehold.co/300x350/EEE/31343C" alt="" />
-        </div>
-        <div class="detaileBox">
-          <h2>Name :</h2>
-          <h4>Rate :</h4>
-          <h4>Description :</h4>
+      <div class="card mb-3" style="max-width: 740px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://media.themoviedb.org/t/p/w342/${movie.poster_path}"
+              class="img-fluid rounded-start"
+              alt="..."
+              onerror=""
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">${movie.original_title}</h5>
+              <p class="card-text">${movie.vote_count}</p>
+              <p class="card-text">${movie.overview}</p>              
+            </div>
+          </div>
         </div>
       </div>
     
     `;
   console.log(movie);
-  // document.getElementById("details").insertAdjacentHTML("afterbegin", html);
+  elements.movieDetails.insertAdjacentHTML("afterbegin", html);
 }
