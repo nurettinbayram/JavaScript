@@ -1,9 +1,9 @@
-// Burada degiskenler tanimlanir yani elementsler
+//? Burada degiskenler tanimlanir yani elementsler. global bir sekilde her yerden ulasmak daha uygundur.
 export const elements = {
   searchForm: document.getElementById("formSearch"),
   searchInput: document.getElementById("inputText"),
   searchResult: document.getElementById("results"),
-  movieDetails: document.getElementById("movie-details"),
+  movieDetails: document.getElementById("details"),
 };
 
 export const imageSize = {

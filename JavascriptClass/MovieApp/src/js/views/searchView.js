@@ -13,6 +13,7 @@ export const searchResult = (data) => {
   //https://placehold.co/143x215/EEE/31343C
 
   data.results.forEach((movie) => {
+    //Note: img onerror propertysi aldigina dikkat etmelisin
     const html = `
         <li class="col d-flex">
           <div class="card h-100 w-100">
