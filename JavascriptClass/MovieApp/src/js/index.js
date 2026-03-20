@@ -2,7 +2,7 @@ import Search from "./models/Search";
 import { elements } from "./base";
 import * as seachView from "./views/searchView"; //? Burada herseyi seachView adi ile dahil eder
 import Movie from "./models/Movie";
-import { movieDetails, moveToTop } from "./views/movieDetails";
+import { movieDetails } from "./views/movieDetails";
 
 //state adinda bir bir obje olusturulur ve bizim degiskenler bunun icine tanimlanir bunun sebebi farkli ayni
 // isimde iki veri olsada farkli objelere bagli olduklari icin farkli deger gosterir buda kafa karisikligini onler.
@@ -36,17 +36,37 @@ elements.searchForm.addEventListener("submit", function (e) {
 });
 
 //!--------------------- Movie Controler ---------------------------
-
+let scrollPosition = 0;
 const movieControler = async () => {
   //Note: Bu kisim onemli hashtag verisini nasil ele alacagimizi bize gosterir.
+  scrollPosition = window.scrollY; // scroll kaydet
+
   const id = window.location.hash.replace("#", "");
   if (id) {
     state.movie = new Movie(id);
     await state.movie.getMovie();
     movieDetails(state.movie.data);
-    moveToTop();
+    // moveToTop();
+
+    // scroll sabitle
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollPosition}px`;
   }
 };
 
 //Note: hashchange eventi ile bilgiler guncellenir.
 window.addEventListener("hashchange", movieControler);
+
+elements.overlay.addEventListener("click", () => {
+  elements.overlay.classList.add("hidden");
+  window.location.hash = "";
+
+  document.body.style.position = "";
+  document.body.style.top = "";
+
+  window.scrollTo(0, scrollPosition);
+});
+
+elements.movieDetails.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
