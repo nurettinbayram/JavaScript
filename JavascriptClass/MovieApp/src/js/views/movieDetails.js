@@ -13,6 +13,7 @@ export function movieDetails(movie) {
           <div class="col-md-4">
             <img
               src="https://media.themoviedb.org/t/p/w342/${movie.poster_path}"
+              onerror="this.src='https://placehold.co/342x542/EEE/31343C';"
               class="img-fluid rounded-start"
               alt="..."
               onerror=""
@@ -21,7 +22,7 @@ export function movieDetails(movie) {
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">${movie.original_title}</h5>
-              <p class="card-text">${movie.vote_count}</p>
+              <p class="card-text">${movie.vote_average}</p>
               <p class="card-text">${movie.overview}</p>              
             </div>
           </div>
@@ -31,4 +32,6 @@ export function movieDetails(movie) {
     `;
   console.log(movie);
   elements.movieDetails.insertAdjacentHTML("afterbegin", html);
+
+  elements.overlay.classList.remove("hidden");
 }

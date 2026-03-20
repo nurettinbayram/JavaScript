@@ -3,7 +3,8 @@ export const elements = {
   searchForm: document.getElementById("formSearch"),
   searchInput: document.getElementById("inputText"),
   searchResult: document.getElementById("results"),
-  movieDetails: document.getElementById("details"),
+  movieDetails: document.getElementById("movie-details"),
+  overlay: document.getElementById("movie-overlay"),
 };
 
 export const imageSize = {
