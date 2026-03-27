@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  background-color: brown;
+  width: 100%;
+  height: 5px;
+  animation: bar 5s ease-in 1s infinite alternate;
+}
+
+@keyframes bar {
+  to {
+    width: 0;
+  }
+}
