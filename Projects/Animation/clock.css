@@ -1,0 +1,37 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 200px;
+  height: 3px;
+  background-color: brown;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform-origin: left center;
+  transform: translate(0, -50%);
+
+  animation: ibre 5s linear 1s infinite forwards;
+}
+
+/* @keyframes ibre {
+  to {
+    transform: translate(0, -50%) rotate(360deg);
+  }
+} */
+
+.borderClock {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 2px solid brown;
+  padding: 5px;
+}
