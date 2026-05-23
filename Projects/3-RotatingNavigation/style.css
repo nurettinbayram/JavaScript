@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #fadebe;
+  --bg-bold: #dcc3aa;
+  --main: #810b38;
+  --main-bold: #541a1a;
+  --main-light: #e07a05;
+}
+
+body {
+  background-color: var(--bg);
+  overflow-x: hidden;
+}
+
+.menu {
+  position: fixed;
+  z-index: -1;
+  bottom: 30px;
+  left: 30px;
+  transform: translateX(-200px);
+  opacity: 0;
+  /*/ iki ayri animation verme  */
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
+}
+
+.menu.menu-index {
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 20px 5px;
+  background-color: var(--main);
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*/ z-indez dusuk olmasi durumunda hover calismayabilir dikkat */
+.menu ul li:hover {
+  background-color: #470d0d;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--main-light);
+  font-size: 17px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  background-color: var(--bg-bold);
+  min-height: 100vh;
+  padding-bottom: 400px;
+  /*/transform-origin: top left donus noktasini merkez den sol ustte tasidik*/
+  transform-origin: top left;
+  transition: transform 0.5s;
+}
+
+.container.rotate {
+  transform: rotate(-17deg);
+}
+
+.container p {
+  width: 78%;
+  margin-top: 20px;
+}
+
+h2 {
+  color: var(--main-light);
+  font-size: 34px;
+}
+
+h2 span:nth-child(-n + 1) {
+  color: var(--main);
+}
+
+.btn-icon {
+  width: 150px;
+  height: 150px;
+  background-color: var(--main-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 2px var(--main);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.btn-icon button {
+  background-color: var(--main-light);
+  border: 0;
+  margin: 2px;
+  transform: rotate(-45deg);
+  border-radius: 10px;
+}
+
+.btn-icon button i {
+  color: var(--main);
+  font-size: 30px;
+  margin: 5px;
+}
+
+.btn-icon.active {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
