@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #760031;
+  --bg-light: #d51c39;
+  --pri: #ff6060;
+  --sec: #feec41;
+}
+
+::placeholder {
+  color: black;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, var(--bg), var(--sec));
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+.searchInput {
+  height: 30px;
+  /* width ile input'u gizleyip gosterebiliyoruz. */
+  width: 0;
+  background-color: var(--sec);
+  border: none;
+  font-size: 18px;
+  transition: width 0.4s;
+  /* ic borderi kaldirir. */
+  outline: none;
+  font-weight: 500;
+  background-image: linear-gradient(90deg, var(--bg-light), var(--sec));
+}
+
+.container.active .searchInput {
+  width: 350px;
+  padding: 0 5px;
+}
+
+#searchBtn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: linear-gradient(90deg, var(--bg-light), var(--sec));
+  border: none;
+  font-size: 18px;
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s;
+}
+
+.container.active #searchBtn {
+  transform: translateX(345px);
+  background-image: linear-gradient(90deg, var(--sec));
+}
